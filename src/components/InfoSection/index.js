@@ -13,7 +13,7 @@ import {
   ImgWrap,
   Img,
 } from "./InfoElements";
-import { Button } from "../ButtonElement";
+import { Button, ButtonR } from "../ButtonElement";
 
 const InfoSection = ({
   lightBg,
@@ -25,6 +25,8 @@ const InfoSection = ({
   darkText,
   description,
   buttonLabel,
+  buttonTo,
+  buttonRef,
   img,
   alt,
   primary,
@@ -40,11 +42,13 @@ const InfoSection = ({
               <TextWrapper>
                 <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
-                <Subtitle darkText={darkText}>{description}</Subtitle>
-                {buttonLabel && (
+                <Subtitle darkText={darkText}>
+                  <div dangerouslySetInnerHTML={{ __html: description }} />
+                </Subtitle>
+                {buttonTo ? (
                   <BtnWrap>
                     <Button
-                      to="home"
+                      to={buttonTo}
                       smooth={true}
                       duration={500}
                       spy={true}
@@ -56,6 +60,22 @@ const InfoSection = ({
                     >
                       {buttonLabel}
                     </Button>
+                  </BtnWrap>
+                ) : (
+                  <BtnWrap>
+                    <ButtonR
+                      to={buttonRef}
+                      smooth={true}
+                      duration={500}
+                      spy={true}
+                      exact="true"
+                      offset={-80}
+                      primary={primary ? 1 : 0}
+                      dark={dark ? 1 : 0}
+                      dark2={dark2 ? 1 : 0}
+                    >
+                      {buttonLabel}
+                    </ButtonR>
                   </BtnWrap>
                 )}
               </TextWrapper>

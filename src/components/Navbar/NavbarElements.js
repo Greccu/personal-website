@@ -61,6 +61,7 @@ export const NavItem = styled.li`
 `;
 
 export const NavLinks = styled(LinkS)`
+  font-size: 20px;
   color: #dcdde1;
   display: flex;
   align-items: center;
