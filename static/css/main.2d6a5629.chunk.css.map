@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack://src/App.css"],"names":[],"mappings":"AAAA,EACE,qBAAsB,CACtB,QAAS,CACT,SAAU,CACV,+BACF,CACA,KACE,wBACF","file":"main.2d6a5629.chunk.css","sourcesContent":["* {\n  box-sizing: border-box;\n  margin: 0;\n  padding: 0;\n  font-family: \"Roboto Slab\", serif;\n}\nbody {\n  background-color: #152347;\n}\n"]}
