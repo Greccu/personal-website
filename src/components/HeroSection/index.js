@@ -27,7 +27,8 @@ const HeroSection = () => {
       <HeroContent>
         <HeroH1>Cristian Grecu</HeroH1>
         <HeroP>
-          2nd Year Computer Science Student - University of Bucharest
+          20 years old - 2nd Year Computer Science Student University of
+          Bucharest
         </HeroP>
         <HeroBtnWrapper>
           <Button

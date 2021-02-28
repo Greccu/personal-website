@@ -41,4 +41,10 @@ export const SocialIconLink = styled.a`
   color: #fff;
   font-size: 48px;
   margin: 0 30px;
+  @media screen and (max-width: 400px) {
+    font-size: 32px;
+  }
+  @media screen and (max-width: 300px) {
+    font-size: 24px;
+  }
 `;
