@@ -2,7 +2,7 @@ import { IconContext } from "react-icons/lib";
 import {
   Nav,
   NavbarContainer,
-  NavMenu,
+  PNavMenu,
   NavItem,
   NavLinkR,
 } from "./NavbarElements";
@@ -13,11 +13,11 @@ const Navbar = () => {
       <IconContext.Provider value={{ color: "#fff" }}>
         <Nav scrollNav={true} margin={true}>
           <NavbarContainer>
-            <NavMenu>
+            <PNavMenu>
               <NavItem>
                 <NavLinkR to="">Home</NavLinkR>
               </NavItem>
-            </NavMenu>
+            </PNavMenu>
           </NavbarContainer>
         </Nav>
       </IconContext.Provider>

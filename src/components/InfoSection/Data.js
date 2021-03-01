@@ -128,7 +128,7 @@ export const Project3 = {
   headline: "Personal Website",
   description: `
   Developed and deployed a personal websites which contains my portfolio (education, skills, projects and others)<br/>
-  Technologies used: React, Node.JS
+  Technologies used: React, HTML, CSS, Node.JS
   `,
   imgStart: true,
   video: require("../../videos/project1.mp4").default,

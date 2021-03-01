@@ -57,6 +57,16 @@ export const NavMenu = styled.ul`
   }
 `;
 
+export const PNavMenu = styled.ul`
+  display: flex;
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  margin-right: -22px;
+  width: 100%;
+  justify-content: center;
+`;
+
 export const NavItem = styled.li`
   height: 80px;
 `;
