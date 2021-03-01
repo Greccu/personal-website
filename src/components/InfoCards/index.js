@@ -31,7 +31,7 @@ const InfoCards = () => {
           <InfoCardsP>
             Faculty of Mathematics and Computer Science <br />
             University of Bucharest <br />
-            2019-present
+            2019-2022
           </InfoCardsP>
         </InfoCardsCard>
       </InfoCardsWrapper>

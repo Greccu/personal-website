@@ -5,7 +5,12 @@ import Navbar from "../components/Navbar";
 import SideBar from "../components/SideBar";
 import HeroSection from "../components/HeroSection";
 import InfoSection from "../components/InfoSection";
-import { About, Projects, Skills } from "../components/InfoSection/Data";
+import {
+  About,
+  Others,
+  Projects,
+  Skills,
+} from "../components/InfoSection/Data";
 import Footer from "../components/Footer";
 import InfoCards from "../components/InfoCards";
 
@@ -25,6 +30,7 @@ const Home = () => {
       <InfoCards />
       <InfoSection {...Skills} />
       <InfoSection {...Projects} />
+      <InfoSection {...Others} />
       <Footer />
     </>
   );

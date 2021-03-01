@@ -20,6 +20,18 @@ export const InfoWrapper = styled.div`
   justify-content: center;
 `;
 
+export const InfoWrapper2 = styled.div`
+  display: grid;
+  z-index: 1;
+  height: 860px;
+  width: 100%;
+  max-width: 1800px;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0 24px;
+  justify-content: center;
+`;
+
 export const InfoRow = styled.div`
   display: grid;
   grid-auto-columns: minmax(auto, 1fr);
@@ -40,6 +52,36 @@ export const Column1 = styled.div`
 `;
 
 export const Column2 = styled.div`
+  margin-bottom: 15px;
+  padding: 0 15px;
+  grid-area: col2;
+`;
+
+export const ProjectRow = styled.div`
+  display: grid;
+  //grid-auto-columns: minmax(auto, 1fr);
+  align-items: center;
+  grid-template-areas: ${({ imgStart }) =>
+    imgStart ? `'col2 col1'` : `'col1 col2'`};
+
+  @media screen and (max-width: 1200px) {
+    grid-template-areas: ${({ imgStart }) =>
+      imgStart ? `'col1' 'col2'` : `'col1 col1' 'col2 col2'`};
+  }
+`;
+
+export const PColumn1 = styled.div`
+  max-width: 500px;
+  margin-bottom: 15px;
+  padding: 0 15px;
+  grid-area: col1;
+  @media screen and (max-width: 1200px) {
+    max-width: 100%;
+  }
+`;
+
+export const PColumn2 = styled.div`
+  flex-grow: 4;
   margin-bottom: 15px;
   padding: 0 15px;
   grid-area: col2;
@@ -88,11 +130,16 @@ export const BtnWrap = styled.div`
 `;
 
 export const ImgWrap = styled.div`
-  max-width: 555px;
   height: 100%;
 `;
 
 export const Img = styled.img`
+  width: 100%;
+  margin: 0 0 10px 0;
+  padding-right: 0;
+`;
+
+export const Video = styled.video`
   width: 100%;
   margin: 0 0 10px 0;
   padding-right: 0;
