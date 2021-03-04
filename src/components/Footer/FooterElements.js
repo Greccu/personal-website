@@ -38,7 +38,7 @@ export const SocialIcons = styled.div`
 `;
 
 export const SocialIconLink = styled.a`
-  color: #fff;
+  color: ${({ dark }) => (dark ? "#152347" : "#fff")};
   font-size: 48px;
   margin: 0 30px;
   @media screen and (max-width: 400px) {

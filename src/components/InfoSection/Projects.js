@@ -12,7 +12,8 @@ import {
   ImgWrap,
   Video,
 } from "./InfoElements";
-
+import { FaGithub } from "react-icons/fa";
+import { SocialIconLink } from "../Footer/FooterElements";
 const ProjectSection = ({
   lightBg,
   id,
@@ -33,7 +34,18 @@ const ProjectSection = ({
           <ProjectRow imgStart={imgStart}>
             <PColumn1>
               <TextWrapper>
-                <TopLine>{topLine}</TopLine>
+                <TopLine>
+                  {topLine}{" "}
+                  <SocialIconLink
+                    href={gitlink}
+                    target="_black"
+                    aria-label="GitHub"
+                    dark={darkText}
+                  >
+                    <FaGithub />
+                  </SocialIconLink>
+                </TopLine>
+
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>
                   <div dangerouslySetInnerHTML={{ __html: description }} />

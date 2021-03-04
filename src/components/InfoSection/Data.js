@@ -76,7 +76,7 @@ export const Others = {
 
   `,
   imgStart: true,
-  img: require("../../images/skills.svg").default,
+  img: require("../../images/others.svg").default,
   alt: "img1",
   dark: true,
   primary: true,
@@ -97,9 +97,10 @@ export const Project1 = {
   Technologies used: ASP.NET MVC5, Entity Framework, HTML, CSS
   `,
   imgStart: true,
-  video: require("../../videos/project1.mp4").default,
+  video: require("../../videos/project_1.mp4").default,
   alt: "video",
   darkText: false,
+  gitlink: "https://github.com/Greccu/DAWProject",
 };
 
 export const Project2 = {
@@ -114,9 +115,10 @@ export const Project2 = {
   Technologies used: React, JavaScript
   `,
   imgStart: false,
-  video: require("../../videos/project1.mp4").default,
+  video: require("../../videos/project_2.mp4").default,
   alt: "video",
   darkText: true,
+  gitlink: "https://github.com/Greccu/ReactSortingVisualizer",
 };
 
 export const Project3 = {
@@ -131,9 +133,10 @@ export const Project3 = {
   Technologies used: React, HTML, CSS, Node.JS
   `,
   imgStart: true,
-  video: require("../../videos/project1.mp4").default,
+  video: require("../../videos/project_3.mp4").default,
   alt: "video",
   darkText: false,
+  gitlink: "https://github.com/Greccu/personal-website",
 };
 
 export const Project4 = {
@@ -149,7 +152,8 @@ export const Project4 = {
   Technologies used: AI, OOP, Pygame
   `,
   imgStart: false,
-  video: require("../../videos/project1.mp4").default,
+  video: require("../../videos/project_4.mp4").default,
   alt: "video",
   darkText: true,
+  gitlink: "https://github.com/Greccu/OtherProjects/tree/master/TicTacToe%2BAI",
 };
